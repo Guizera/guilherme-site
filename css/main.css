@@ -338,3 +338,49 @@
 .label-email:hover:after:active{
     content: "Email Copied";
 }
+/* MOBILE */
+@media screen and (max-width: 767px) {
+
+  h1 {
+    line-height: 130%;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .on-hover-40:hover {
+    margin-left: 0px;
+  }
+  .on-hover--40:hover {
+    margin-left: 0px;
+  }
+  .max-width {
+    max-width: 100%;
+    max-width: 86%;
+  }
+  .logo-inner {
+    top: 5%;
+    left: 75%;
+  }
+  .label-logo:hover:after {
+    content: 'Guilherme.';
+  }
+  .bg-photo {
+    -webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+		-moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+		animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+  }
+  .bg-photo {
+    left: 0;
+  }
+  .max-width-left-70 {	
+    max-width: 100%;
+  }
+  .label-email:hover:after{
+    content:"Copied to clipboard";
+  }
+
+  
+}
