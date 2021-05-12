@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+  }
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code, 
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center, dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+    background-color: #080A0E;
+  }
+  /* ------- text styles ------- */
+.text-white {
+    color: #ffffff;
+  }
+  .text-black {
+    color: #080A0E;
+  }
+  .text-green {
+    color: #2af925;
+  }
+  .text-gray {
+    color: #a1a1a1 !important;
+  }
+  .hide-text-block {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    position: fixed;
+    line-height: 110%;
+    letter-spacing: -2px;
+    font-size: 3.2em;
+    font-size: 18vm;
+    font-size: 18vmin;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 140%;
+    font-size: 100px;
+    font-weight: 500;
+  
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 120%;
+    font-size: 64px;
+  }
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 140%;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 16vh 0 4vh 0;
+    margin: 24vh 0 4vh 0;
+  }
+  
+  /* ------- paragraph style ------*/
+  
+  p {
+    line-height: 170%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 8vh 0 2vh 0;
+  }
+  /* ------ links ----------- */
+  a, a:after, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: #080A0E;
+  }
+  a.text-white, a.text-white:after, a.text-white:visited {
+    color: #ffffff;
+  }
+  a.text-green, a.text-green:after, a.text-green:visited {
+      color: #2af925;
+  }
+  /* ---------- medias ----------*/
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+  }
+  /* ---------- Grids -----------*/
+.top-bottom-margin {
+    margin: 40vh 0 20vh 0;
+    margin: 35vh 0 20vh 0;
+    margin: 35vh 0 20vh 0;
+  }
+  .top-margin {
+    margin: 20vh 0 15vh 0;
+  }
+  .bottom-margin {
+    margin: 15vh 0 5vh 0;
+  }
+  .max-width {
+    max-width: 68%;
+    margin: 0 auto;
+  }
+  .column{
+    width: 33.33%;
+    padding: 5px;
+  }
+  .column-2 {
+    width: 50%;
+    padding: 8px;
+  }
+  .column a {
+    margin-top: 0;
+  }
+  #hover {
+    width: 280px;
+    height: 140px;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.6;
+  }
+  #hover:hover {
+    background-color: #2af925;
+    transition: .2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 6px;
+  }
+  .column img {
+    width: 280px;
+    border-radius: 6px;
+  }
+  .column-2 a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .column-2 a:hover {
+      color: #2af925 !important;
+      transition: all .2s ease-in-out;
+  }
+  .row {
+    display: flex;
+  }
+  /*-------- Logo ------------*/
+  .logo {
+    float: right;
+  }
+  .logo-inner {
+    position: fixed;
+    top: 10%;
+    z-index: 999;
+  }
+  .label-logo:after {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    content: 'Guilherme.';
+  }
+  .label-logo:hover:after {
+    content: 'Guilherme.Cunha';
+    white-space: nowrap;
+  }
+  .label-logo {
+    -webkit-animation: fadelogo .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -moz-animation: fadelogo .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation: fadelogo .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+  }
+  @-webkit-keyframes fadelogo {
+    0% {-webkit-transform: translateY(10vh);}
+    100% {-webkit-transform: translateY(0vh);}
+  }
+  @keyframes fadelogo {
+    0% {-webkit-transform: translateY(10vh);}
+    100% {-webkit-transform: translateY(0vh);}
+  }
+  
+  /* ------ hover states ------- */
+  .on-hover-top {
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-bottom: 14px;
+  }
+  .on-hover-40, .on-hover--40 {
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+  }
+  .on-hover-40:hover {
+    margin-left: 40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+  }
+  .on-hover--40:hover{
+    margin-left: -40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  /* ============ HOME ============= */
+  .vertical-align {
+    position: absolute;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.label-hello:after {
+    content: "Hello.";
+}
+.label-hello:hover:after {
+    content: "About";
+}
+.label-iam:after {
+    content: "I am";
+}
+.label-iam:hover:after {
+    content: "Works";
+}
+.label-guilherme:after {
+    content: "Guilherme";
+}
+.label-guilherme:hover:after {
+    content: "Contact"
+}
+.animate {
+    -webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode:backwards
+}
+
+@-webkit-keyframes animate {
+    0%{ opacity: 0; -webkit-transform: translateY(100%);}
+    100%{opacity: 1;-webkit-transform: translateY(0%);}
+}
+@keyframes animate {  
+    /* 0%{opacity: 0; transform: translateY(100%);} */
+    0%{opacity: 0; transform: translateY(30vh);}
+    100%{opacity: 1; transform: translateY(0%);}
+}
+/* ---------------- Delays ------------------- */
+.delay02 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+.delay04 {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+.delay06 {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+/* ------- background ----------*/
+.bg-photo {
+    z-index: -9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/dev.jpeg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-animation: bgphoto 1.2s cubic-bezier(.5, .6, .6, 1);
+    -moz-animation: bgphoto 1.2s cubic-bezier(.5, .6, .6, 1);
+    animation: bgphoto 1.2s cubic-bezier(.5, .6, .6, 1);
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    opacity: 0.1;
+
+}
+@-webkit-keyframes bgphoto {
+    0% {opacity: 0; transform: scale(1.1);}
+    100% {opacity: 0.1; transform: scale(1);}
+}
+@keyframes bgphoto {
+    0% {opacity: 0; transform: scale(1.1);}
+    100% {opacity: 0.1; transform: scale(1);}
+}
+/* ================= ABOUT ================= */
+.max-width-left-70 {
+    max-width: 70%;
+}
+/* ================= WORKS ================= */
+.max-width-80 {
+    max-width: 80%;
+}
+.links a {
+    display: block;
+    margin: 4vh 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+}
+/* -------- copy email to clipboard ---------- */
+.label-email {
+    cursor: pointer;
+}
+.label-email:after{
+    content: "guizera7@gmail.com";
+}
+.label-email:hover:after {
+    content: "Copy to clipboard";
+}
+.label-email:hover:after:active{
+    content: "Email Copied";
+}
