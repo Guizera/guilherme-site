@@ -344,6 +344,12 @@
   h1 {
     line-height: 130%;
   }
+  h2 {
+    font-size: 52px;
+  }
+  h3 {
+    font-size: 46px;
+  }
   h4 {
     font-size: 30px;
   }
@@ -362,7 +368,7 @@
   }
   .logo-inner {
     top: 5%;
-    left: 75%;
+    left: 70%;
   }
   .label-logo:hover:after {
     content: 'Guilherme.';
@@ -380,6 +386,27 @@
   }
   .label-email:hover:after{
     content:"Copied to clipboard";
+  }
+  .column{
+    width: 100%;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  #hover {
+    width: 280px;
+    height: 140px;
+  }
+  .column img {
+    width: 280px;
+    border-radius: 6px;
+  }
+  .column-2 a {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .row {
+    display: block;
   }
 
   
